@@ -21,6 +21,5 @@ RUN apk update && \
 
 USER node
 
-RUN npm install -g pnpm
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD [ "node", "app.js" ]
