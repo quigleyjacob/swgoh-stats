@@ -12,7 +12,7 @@ COPY --from=builder node_modules node_modules/
 COPY . .
 RUN chown node:node statCalcData
 # VOLUME /app/statCalcData
-RUN npm install -g pnpm
+# RUN npm install -g pnpm
 
 RUN apk update && \
   # wrap process in --init in order to handle kernel signals
